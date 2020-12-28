@@ -5,38 +5,39 @@ import { SocialIcon } from "react-social-icons";
 export default function NavBar() {
   return (
     <header>
-      <div className="container mx-auto flex justify-around">
+      <div className="container flex mx-auto justify-between lg:justify-around ">
         <nav className="flex">
-          <NavLink
+
+          {/* <NavLink
             to="/"
             exact
             activeClassName="text-black"
-            className="inline-flex items-center py-6 px-3 mr-4 text-black-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
-          >
-            KP
-          </NavLink>
-
-          {/* <NavLink
-            to="/post"
-            activeClassName="text-black-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700"
-          >
-            Blog
+            className="inline-flex items-center py-6 px-3 mr-4 text-black-100 text-2xl font-bold cursive tracking-widest">
+            Kamal Patel
           </NavLink> */}
-          <NavLink
-            to="/project"
-            // activeClassName="text-black-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700"
-          >
-            Projects
-          </NavLink>
+
+
           <NavLink
             to="/about"
             // activeClassName="text-white-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700"
-          >
-            About Me!
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700">
+            About
           </NavLink>
+          <NavLink
+            to="/project"
+            // activeClassName="text-black-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700">
+            Projects
+          </NavLink>
+          <a
+            rel="noreferrer"
+            href="https://hashnode.com/@KamalPatel"
+            activeClassName="text-black-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700"
+            target="_blank">
+            Blog
+          </a>
+
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon

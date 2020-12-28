@@ -32,10 +32,10 @@ export default function Project() {
           Welcome to my projects page!
         </h2> */}
 
-        <section className="grid grid-cols-3 gap-8">
+        <section className="grid grid-cols-3 gap-8 container">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-8">
+              <article className="relative rounded-lg shadow-xl bg-red-100 p-8">
                 <h3 className="text-gray-800 text-2xl font-bold mb-2">
                   {project.title}
                 </h3>
