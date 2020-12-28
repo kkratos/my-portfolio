@@ -2,11 +2,23 @@ export default {
   name: "project",
   title: "Project",
   type: "document",
+
   fields: [
+
+    {
+      name: "Project Image",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+
     {
       name: "title",
       type: "string",
     },
+
     {
       name: "date",
       type: "datetime",
