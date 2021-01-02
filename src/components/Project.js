@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+  return builder.image(source);
+}
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -8,6 +15,7 @@ export default function Project() {
     sanityClient
       .fetch(
         `*[_type == "project"]{
+        pimage,
         title,
         date,
         place,
@@ -23,55 +31,45 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="min-h-screen p-12">
+    <main className="w-9/12 mx-auto p-12">
       <section className="container mx-auto">
-        <h1 className="cursive text-3xl flex justify-center cursive mb-12">
+        <h1 className="flex text-4xl font-bold justify-center p-10">
           Projects
         </h1>
-        {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my projects page!
-        </h2> */}
+        <div className="flex flex-col items-start">
 
-        <section className=" flex w-9/12 mx-auto container">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="flex flex-col justify-between relative rounded-lg shadow-lg mx-2 p-5 w-96">
-                <div>
-                  <h3 className="text-gray-800 text-xl font-bold mb-2">
-                    {project.title}
-                  </h3>
-                  <div className="text-gray-500 text-xs space-x-4">
-                    <span>
-                      <strong className="font-bold">Finished on</strong>:{" "}
-                      {new Date(project.date).toLocaleDateString()}
-                    </span>
-                    {/* <span>
-                    <strong className="font-bold">Company</strong>:{" "}
-                    {project.place}
-                  </span> */}
-                    <span>
-                      <strong className="font-bold">Type</strong>:{" "}
-                      {project.projectType}
-                    </span>
+              <div className="flex mx-auto mb-5 shadow-lg p-5">
+
+                <div class="max-w-sm mx-auto rounded-md overflow-hidden">
+                  <div className="flex justify-center py-3">
+                    <h3 className="text-2xl inline-block uppercase">{project.title}</h3>
                   </div>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
-                    {project.description}
-                  </p>
+                  <div className="flex justify-end w-full h-56 bg-cover">
+                    <img src={urlFor(project.pimage).url()} alt="projects" />
+                  </div>
                 </div>
-                <a
-                  href={project.link}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-red-500 font-bold hover:text-red-400 text-xl">
-                  View The Project{" "}
-                  <span role="img" aria-label="right pointer">
-                    👉
-                  </span>
-                </a>
-              </article>
+
+                <div className="w-96 mx-10">
+                  <div className="flex flex-col space-y-6">
+                    <div className=" inline-block">
+                      <h2 className="text-2xl">Technology Used</h2>
+                    </div>
+                    <div className="text-lg ">
+                      <ul>
+                        {project.tags.map((tag, index) => (
+                          <li className="bg-blue-50 my-1" key={index}>{tag}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="">{project.description}</div>
+                  </div>
+                </div>
+              </div>
             ))}
-        </section>
+        </div>
       </section>
-    </main>
+    </main >
   );
 }

@@ -21,7 +21,7 @@ export default {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: {type: 'author'},
+      to: { type: 'author' },
     },
     {
       name: 'mainImage',
@@ -34,7 +34,11 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
-      type: 'datetime',
+      type: 'date',
+      options: {
+        dateFormat: 'MMMM, Do YY',
+        calendarTodayLabel: 'Today'
+      }
     },
     {
       name: 'body',
@@ -50,7 +54,7 @@ export default {
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author} = selection
+      const { author } = selection
       return Object.assign({}, selection, {
         subtitle: author && `by ${author}`,
       })

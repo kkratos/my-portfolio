@@ -4,10 +4,9 @@ export default {
   type: "document",
 
   fields: [
-
     {
-      name: "Project Image",
-      title: "Image",
+      name: "pimage",
+      // title: "Image",
       type: "image",
       options: {
         hotspot: true,

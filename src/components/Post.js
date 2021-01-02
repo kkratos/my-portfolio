@@ -16,8 +16,9 @@ export default function Post() {
             _id,
             url
           },
-          alt
-        }
+          alt,
+        },
+        publishedAt
       }`
       )
       .then((data) => setPost(data))
@@ -25,34 +26,19 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="min-h-screen p-12">
+    <main className="min-h-full">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">
-          My Blog Posts Page!
-        </h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col">
           {postData &&
             postData.map((post, index) => (
-              <article>
+              <article key={index}>
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                  <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
-                    key={index}
-                  >
-                    <img
-                      src={post.mainImage.asset.url}
-                      alt={post.mainImage.alt}
-                      className="w-full h-full rounded-r object-cover absolute"
-                    />
-                    <span className="block relative h-full flex justify-end items-end pr-2 pb-2">
-                      <h3 className="text-gray-800 text-lg font-bold px-3 py-3 bg-red-700 text-red-100 bg-opacity-75 rounded">
-                        {post.title}
-                      </h3>
-                    </span>
-                  </span>
+                  <div className="flex py-3 hover:bg-gray-100">
+                    <time className="flex items-end w-36">{new Date(post.publishedAt).toDateString()}</time>
+                    <h3 className="text-xl rounded">
+                      {post.title}
+                    </h3>
+                  </div>
                 </Link>
               </article>
             ))}

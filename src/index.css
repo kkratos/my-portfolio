@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +9,8 @@
   font-weight: 700;
 }
 
+
+/*
 .prose img{
   margin-left: auto;
   margin-right: auto;
@@ -17,3 +20,4 @@
 .home-name{
   font-size: 100px;
 }
+*/

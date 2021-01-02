@@ -4,36 +4,32 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header>
-      <div className="container flex mx-auto justify-between lg:justify-around ">
-        <nav className="flex">
+    <header className="w-9/12 m-auto">
+      <div className="container flex justify-between ">
+        <nav className="flex items-center">
 
-          {/* <NavLink
+          <NavLink
             to="/"
             exact
-            activeClassName="text-black"
-            className="inline-flex items-center py-6 px-3 mr-4 text-black-100 text-2xl font-bold cursive tracking-widest">
-            Kamal Patel
-          </NavLink> */}
+            className="flex px-3 text-xl hover:underline">
+            Home
+          </NavLink>
 
 
           <NavLink
             to="/about"
-            // activeClassName="text-white-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700">
+            className="flex px-3 text-xl hover:underline">
             About
           </NavLink>
           <NavLink
             to="/project"
-            // activeClassName="text-black-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700">
+            className="flex px-3 text-xl hover:underline">
             Projects
           </NavLink>
           <a
             rel="noreferrer"
             href="https://hashnode.com/@KamalPatel"
-            activeClassName="text-black-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-700 hover:text-black-700"
+            className="flex px-3 text-xl hover:underline"
             target="_blank">
             Blog
           </a>
