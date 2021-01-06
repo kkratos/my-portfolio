@@ -44,9 +44,9 @@ export default function About() {
           />
           {/* </div> */}
           <div className="flex flex-col justify-center">
-            <h1 className="cursive md:text-4xl text-black-300 mb-4 ">
+            <h1 className="cursive md:text-3xl text-black-300 mb-2 ">
               Hey there. I'm{" "}
-              <span className="text-black-100">{author.name}</span>
+              <span className="text-black-100">{author.name}. 👋</span>
             </h1>
             <p className="text-black-200 text-md md:text-xl text-justify">{author.bio}</p>
           </div>
@@ -71,27 +71,27 @@ export default function About() {
             <p className="text-md md:text-xl">My constantly evolving skills - these are the technology I'm capable to use.</p>
           </div>
           <div className="flex flex-wrap gap-5 md:justify-around md:gap-5">
-            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-100">
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaHtml5 size={70} />
               <h4>HTML5</h4>
             </div>
-            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-100">
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaNodeJs size={70} />
               <h4>CSS</h4>
             </div>
-            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-100">
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaJsSquare size={70} />
               <h4>Javascript</h4>
             </div>
-            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-100">
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaReact size={70} />
               <h4>React</h4>
             </div>
-            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-100">
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaNode size={70} />
               <h4>Node.js</h4>
             </div>
-            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-100">
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaGit size={70} />
               <h4>Git</h4>
             </div>
@@ -101,9 +101,9 @@ export default function About() {
         <section className="md:py-20">
           <h3 className="text-xl md:text-3xl font-bold my-5">These are the things I'm currently doing.</h3>
           <div className="md:grid md:grid-cols-2 md:gap-5 md:my-3 md:py-5">
-            <div className="p-6 text-center bg-black text-white my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Building my first full-stack project</div>
-            <div className="p-6 text-center bg-black text-white my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Learning Node.js</div>
-            <div className="p-6 text-center bg-black text-white my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Improving my UI/UX design Skills</div>
+            <div className="p-6 text-center bg-blue-300 text-black my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Building an e-commerce full-stack project</div>
+            <div className="p-6 text-center bg-blue-300 text-black my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Learning Node.js</div>
+            <div className="p-6 text-center bg-blue-300 text-black my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Improving my UI/UX design Skills</div>
           </div>
         </section>
       </div>

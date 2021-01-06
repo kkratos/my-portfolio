@@ -7,20 +7,22 @@ import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
+//Dark and light theme imports
+
+
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Switch>
-        <Route component={Home} path="/" exact />
-        <Route component={About} path="/about" />
-        {/* <Route component={SinglePost} path="/post/:slug" /> */}
-        <Route component={Post} path="/post" />
-        <Route component={Project} path="/project" />
-      </Switch>
-      <Footer />
-    </BrowserRouter>
-
+        <BrowserRouter>
+          <NavBar />
+          <Switch>
+            <Route component={Home} path="/" exact />
+            <Route component={About} path="/about" />
+            {/* <Route component={SinglePost} path="/post/:slug" /> */}
+            <Route component={Post} path="/post" />
+            <Route component={Project} path="/project" />
+          </Switch>
+          <Footer />
+        </BrowserRouter>
   );
 }
 

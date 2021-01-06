@@ -38,11 +38,11 @@ export default function Project() {
         <h1 className="flex text-4xl font-bold justify-center p-10">
           Projects
         </h1>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-2">
           {projectData &&
             projectData.map((project, index) => (
               <div className="grid grid-flow-row md:px-4 lg:px-6 py-5" key={index}>
-                <div className="flex flex-col bg-white shadow-xl">
+                <div className="flex flex-col bg-white shadow-xl rounded-lg">
                   <div className="">
                     <img src={urlFor(project.pimage).url()} alt=""
                       className="h-56 w-full" />
