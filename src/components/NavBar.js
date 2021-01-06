@@ -4,38 +4,38 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="w-9/12 m-auto">
-      <div className="container flex justify-between ">
-        <nav className="flex items-center">
+    <header className="lg:w-11/12 max-w-screen-lg m-auto md:mt-10 mt-4 p-4">
+      <div className="flex justify-center md:justify-between">
+        <nav className="flex md:py-3 md:my-6 items-center">
 
           <NavLink
             to="/"
             exact
-            className="flex px-3 text-xl hover:underline">
+            className="px-3 text-lg md:text-xl md:hover:underline">
             Home
           </NavLink>
 
 
           <NavLink
             to="/about"
-            className="flex px-3 text-xl hover:underline">
+            className=" px-3 text-lg md:text-xl md:hover:underline">
             About
           </NavLink>
           <NavLink
             to="/project"
-            className="flex px-3 text-xl hover:underline">
-            Projects
+            className=" px-3 text-lg md:text-xl md:hover:underline">
+            Project
           </NavLink>
           <a
             rel="noreferrer"
             href="https://hashnode.com/@KamalPatel"
-            className="flex px-3 text-xl hover:underline"
+            className=" px-3 text-lg md:text-xl hover:underline"
             target="_blank">
             Blog
           </a>
 
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-flex py-3 my-6 hidden md:inline-flex">
           <SocialIcon
             url="https://twitter.com/iamkamalpatel"
             className="mr-4"

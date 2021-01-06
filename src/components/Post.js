@@ -33,9 +33,9 @@ export default function Post() {
             postData.map((post, index) => (
               <article key={index}>
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                  <div className="flex py-3 hover:bg-gray-100">
-                    <time className="flex items-end w-36">{new Date(post.publishedAt).toDateString()}</time>
-                    <h3 className="text-xl rounded">
+                  <div className="flex flex-col md:flex-row my-3 mx-3 md:mx-0 hover:bg-gray-100">
+                    <time className="text-xs md:text-md flex items-end md:w-36 text-gray-500">{new Date(post.publishedAt).toDateString()}</time>
+                    <h3 className=" text-lg md:text-xl">
                       {post.title}
                     </h3>
                   </div>
