@@ -57,7 +57,7 @@ export default function Project() {
                       ))}
                     </div>
                     <div className="flex flex-wrap items-end pt-5 ">
-                      <a href={project.link} alt={project.title} target="_blank">
+                      <a href={project.link} alt={project.title} target="_blank" rel="noreferrer">
                         <FaGithub style={{ height: 25, width: 25 }} />
                       </a>
                     </div>
