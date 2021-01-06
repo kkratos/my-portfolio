@@ -37,11 +37,11 @@ export default function About() {
       <div className="container mx-auto relative">
         <section className="rounded-xl lg:flex lg:py-20 my-10">
           {/* <div className="flex justify-center"> */}
-            <img
-              src={urlFor(author.authorImage).url()}
-              className="rounded-3xl mb-4 w-32 h-32 lg:w-64 lg:h-64 lg:mr-8"
-              alt="kamal"
-            />
+          <img
+            src={urlFor(author.authorImage).url()}
+            className="rounded-3xl mb-4 w-32 h-32 lg:w-64 lg:h-64 lg:mr-8"
+            alt="kamal"
+          />
           {/* </div> */}
           <div className="flex flex-col justify-center">
             <h1 className="cursive md:text-4xl text-black-300 mb-4 ">
@@ -52,9 +52,21 @@ export default function About() {
           </div>
         </section>
 
+        <section>
+          <div className="py-5">
+            <h3 className="text-xl md:text-3xl font-bold">Education</h3>
+            <div className="mt-2">
+              <p className="text-md md:text-xl m-0">MS Mechanical Engineering</p>
+            </div>
+            <div className="mt-1">
+              <p className='bg-purple-300 inline-block w-44 italic'>New York University '19</p>
+              <h4 className="italic">Major - Control and Dynamics for Robotics Systems</h4>
+            </div>
+          </div>
+        </section>
 
         <section className="md:py-20 my-10">
-          <div className="py-5 h-30 space-y-2">
+          <div className="py-5 space-y-2">
             <h3 className="text-xl md:text-3xl font-bold">Tech Stack</h3>
             <p className="text-md md:text-xl">My constantly evolving skills - these are the technology I'm capable to use.</p>
           </div>
