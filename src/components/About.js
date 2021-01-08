@@ -115,7 +115,7 @@ export default function About() {
 
         <section className="md:py-20">
           <h3 className="text-xl md:text-3xl font-bold my-5">These are the things I'm currently doing.</h3>
-          <div className="md:grid md:grid-cols-2 md:gap-5 md:my-3 md:py-5">
+          <div className="md:grid md:grid-cols-2 md:gap-y-2 md:gap-x-4 md:my-3">
             <div className="p-6 text-center bg-blue-300 text-black my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Building an e-commerce full-stack project</div>
             <div className="p-6 text-center bg-blue-300 text-black my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Learning Node.js</div>
             <div className="p-6 text-center bg-blue-300 text-black my-2 md:text-lg md:rounded-2xl md:border-4 md:border-gray-200 shadow-lg">Improving my UI/UX design Skills</div>

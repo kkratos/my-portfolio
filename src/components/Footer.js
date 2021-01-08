@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 function Footer() {
     return (
-        <div className="px-3 py-5 md:m-10 md:p-10">
+        <div className="lg:w-11/12 max-w-screen-lg m-auto p-4 my-7">
             <div className="flex justify-center mb-2 md:hidden">
                 <SocialIcon
                     url="https://twitter.com/iamkamalpatel"
