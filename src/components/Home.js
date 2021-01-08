@@ -14,12 +14,12 @@ function Home() {
           <div className="md:mx-7">
             <h1 className="text-xl md:text-2xl text-blue-700 text-center md:text-left">Hello, I'm Kamal</h1>
             <h3 className="text-md md:text-2xl text-gray-500 text-center md:text-left">Mechanical Engineer / Self-taught Developer.</h3>
-            <p className="text-md md:text-2xl text-gray-500 text-center md:text-left">who is willing to learn and create outstanding applications!</p>
+            <p className=" m-0 text-md md:text-2xl text-gray-500 text-center md:text-left">who is willing to learn and create outstanding applications!</p>
           </div>
         </div>
       </section>
 
-      <section className="flex flex-col mt-10">
+      <section className="hidden flex flex-col mt-10">
         <h3 className="text-center md:text-left text-xl md:text-3xl font-bold my-5">Articles</h3>
         <Post />
       </section>

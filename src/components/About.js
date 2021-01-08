@@ -7,6 +7,9 @@ import { FaJsSquare } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
 import { FaNode } from 'react-icons/fa'
 import { FaGit } from 'react-icons/fa'
+import { FaSass } from 'react-icons/fa'
+import { FaNpm } from 'react-icons/fa'
+import { FaPython } from 'react-icons/fa'
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -48,7 +51,7 @@ export default function About() {
               Hey there. I'm{" "}
               <span className="text-black-100">{author.name}. 👋</span>
             </h1>
-            <p className="text-black-200 text-md md:text-xl text-justify">{author.bio}</p>
+            <p className="m-0 text-black-200 text-md md:text-xl text-justify">{author.bio}</p>
           </div>
         </section>
 
@@ -56,10 +59,10 @@ export default function About() {
           <div className="py-5">
             <h3 className="text-xl md:text-3xl font-bold">Education</h3>
             <div className="mt-2">
-              <p className="text-md md:text-xl m-0">MS Mechanical Engineering</p>
+              <p className="m-0 text-md md:text-xl m-0">MS Mechanical Engineering</p>
             </div>
             <div className="mt-1">
-              <p className='bg-purple-300 inline-block w-44 italic'>New York University '19</p>
+              <p className='m-0 bg-purple-300 inline-block w-44 italic'>New York University '19</p>
               <h4 className="italic">Major - Control and Dynamics for Robotics Systems</h4>
             </div>
           </div>
@@ -68,9 +71,9 @@ export default function About() {
         <section className="md:py-20 my-10">
           <div className="py-5 space-y-2">
             <h3 className="text-xl md:text-3xl font-bold">Tech Stack</h3>
-            <p className="text-md md:text-xl">My constantly evolving skills - these are the technology I'm capable to use.</p>
+            <p className=" m-0 text-md md:text-xl">My constantly evolving skills - these are the technology I'm capable to use.</p>
           </div>
-          <div className="flex flex-wrap gap-5 md:justify-around md:gap-5">
+          <div className="flex flex-wrap gap-5 md:gap-5">
             <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaHtml5 size={70} />
               <h4>HTML5</h4>
@@ -94,6 +97,18 @@ export default function About() {
             <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaGit size={70} />
               <h4>Git</h4>
+            </div>
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
+              <FaSass size={70} />
+              <h4>Sass</h4>
+            </div>
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
+              <FaNpm size={70} />
+              <h4>NPM</h4>
+            </div>
+            <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
+              <FaPython size={70} />
+              <h4>Python</h4>
             </div>
           </div>
         </section>

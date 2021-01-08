@@ -43,7 +43,10 @@ export default {
     {
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type: 'array',
+      of: [{
+        type: 'block',
+      }]
     },
   ],
 

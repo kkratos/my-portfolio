@@ -42,10 +42,9 @@ export default function Project() {
           {projectData &&
             projectData.map((project, index) => (
               <div className="grid grid-flow-row md:px-4 lg:px-6 py-5" key={index}>
-                <div className="flex flex-col bg-white shadow-xl rounded-lg">
-                  <div className="">
-                    <img src={urlFor(project.pimage).url()} alt=""
-                      className="h-56 w-full" />
+                <div className="flex flex-col bg-white shadow-xl rounded-xl overflow-hidden">
+                  <div>
+                    <img src={urlFor(project.pimage).url()} alt={project.title} />
                   </div>
                   <div className="px-2 py-4">
                     <h1 className="font-bold text-lg">{project.title}</h1>
@@ -55,9 +54,9 @@ export default function Project() {
 
                   </div>
                   <div className="mt-auto">
-                    <div className="m-2">
+                    <div className="flex m-2">
                       {project.tags.map((tag, index) => (
-                        <li className="inline-flex mr-2 p-1 bg-blue-100 rounded-md" key={index}>{tag}</li>
+                        <li className="list-none text-center text-sm mr-2 p-1 bg-blue-100 rounded-md" key={index}>{tag}</li>
                       ))}
                     </div>
                     <div className="flex mt-auto py-2 px-2">

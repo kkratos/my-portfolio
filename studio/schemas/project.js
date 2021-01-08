@@ -6,7 +6,7 @@ export default {
   fields: [
     {
       name: "pimage",
-      // title: "Image",
+      title: "Image",
       type: "image",
       options: {
         hotspot: true,
