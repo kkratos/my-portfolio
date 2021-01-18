@@ -37,7 +37,116 @@ export default function About() {
 
   return (
     <main className="relative lg:w-11/12 max-w-screen-lg m-auto p-8 my-7">
-      <div className="container mx-auto relative">
+
+      <div className="my-5">
+        <h3 className="text-3xl">Experience</h3>
+      </div>
+      
+      <div className="my-5">
+        <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
+          <h4 className="text-gray-500">Self-taught Developer</h4>
+          <h4 className="flex md:justify-end">India</h4>
+        </div>
+        <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
+          <h4 className="italic">Fullstack web developer</h4>
+          <h4 className="flex md:justify-end">June 2020 - Present</h4>
+        </div>
+
+        <div>
+          <ul className="py-4 list-disc text-justify">
+            <li>Building fullstack application with Reactjs.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="my-5">
+        <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
+          <h4 className="text-gray-500">Instahub - Automation Simplified</h4>
+          <h4 className="flex md:justify-end">Philadelphia, PA</h4>
+        </div>
+        <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
+          <h4 className="italic">Mechanical Design Engineer (intern)</h4>
+          <h4 className="flex md:justify-end">Sept 2019 - Dec 2019</h4>
+        </div>
+
+        <div>
+          <ul className="py-4 list-disc text-justify">
+            <li>Worked with engineers in design, assembly, test and modification of electro-mechanical product Snap-on Lightning
+                Automation Retrofit Device.</li>
+            <li>Assisted the supervisor with part design/calculation and drafted detailed 2D manufacturing drawings using Solidworks
+                and AutoCAD.</li>
+            <li>Iterated the part design and prototyping of the device using the Prusa3D printers and conducted the repair and
+                installation of new printers.</li>
+            <li>
+              <strong>Updated 20 CAD files</strong> and created accessible drawings of the existing products for reference for other engineers.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="my-5">
+        <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
+          <h4 className="md:text-xl text-gray-500">NYU Composite Material and Mechanics Laboratory</h4>
+          <h4 className="flex md:justify-end">New York, NY</h4>
+        </div>
+        <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
+          <h4 className="italic">Graduate Researcher</h4>
+          <h4 className="flex md:justify-end">June 2019 - Aug 2019</h4>
+        </div>
+
+        <div>
+          <ul className="py-4 list-disc text-justify">
+            <li>Researched ways to improve structural health monitoring system for wind turbine blade using low-cost fiber-optic sensor.</li>
+            <li>Designed a 3D model of wind turbine blade in Solidworks and performed structural and modal analysis in ANSYS.</li>
+            <li>Compiled 15-20 research papers for a review article on residual thermal stress in metal additive manufacturing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="my-5">
+        <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
+          <h4 className="text-gray-500">NYU Vertically Integrated Project - Soft Robotics</h4>
+          <h4 className="flex md:justify-end">New York, NY</h4>
+        </div>
+        <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
+          <h4 className="italic">Graduate Assistant</h4>
+          <h4 className="flex md:justify-end">Oct 2019 - Nov 2019</h4>
+        </div>
+
+        <div>
+          <ul className="py-4 list-disc text-justify">
+            <li>Conducted brainstorming and problem solving sessions for undergraduate students in soft robotics course.</li>
+            <li>Tutored students in Solidworks and 3D printing/Cura software with hands-on exercise and  training on Ultimaker 3D Printers.</li>
+            <li><strong>Assisted 18-20 students</strong> with material selection, design, construction and testing of soft robotics structures for a credit
+            course.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="my-5">
+        <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
+          <h4 className="text-gray-500">NYU Autonomous vehicle - Mechanical Team</h4>
+          <h4 className="flex md:justify-end">New York, NY</h4>
+        </div>
+        <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
+          <h4 className="italic">Mechanical Design Engineer</h4>
+          <h4 className="flex md:justify-end">Sept 2017 - July 2018</h4>
+        </div>
+
+        <div>
+          <ul className="py-4 list-disc text-justify">
+            <li>Collaboratively designed an autonomous vehicle for annual Intelligent Ground Vehicle Competition (IGVC'18). Placed <strong>3rd out of 10 teams</strong> for a self-drive challenge.</li>
+            <li>Worked closely with purchasing team to procure hardware and tools required and assisted in securing sponsorship.</li>
+            <li>Assisted the <strong>team of 10 engineers</strong> in converting a golf cart into an self-driving vehicle under <strong>$6000</strong> using inexpensive
+            micro-controllers and 3D printing.</li>
+            <li>Responsible for assembling and disassembling of vehicle, electrical wiring routing and installation of hardware.</li>
+            <li>3D printed prototypes for sensor mounts and conducted fit and functionality test on the vehicle.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="hidden container mx-auto relative">
         <section className="rounded-xl lg:flex lg:py-20 my-10">
           {/* <div className="flex justify-center"> */}
           <img
