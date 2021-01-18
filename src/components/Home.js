@@ -44,7 +44,7 @@ function Home() {
   return (
     <main className="lg:w-11/12 max-w-screen-lg m-auto p-8 my-7">
       <section className="md:flex mt-10">
-        <div className="flex justify-center">
+        <div className="rounded full flex justify-center">
           <img src={image} alt="profile" className="object-contain w-48 rounded-full my-5 md:m-0" />
         </div>
 
