@@ -11,20 +11,20 @@ export default function NavBar() {
           <NavLink
             to="/"
             exact
-            className="px-3 text-lg md:text-xl md:hover:underline">
+            className="px-3 text-lg md:text-xl hover:underline">
             Home
           </NavLink>
 
 
           <NavLink
             to="/about"
-            className=" px-3 text-lg md:text-xl md:hover:underline">
+            className=" px-3 text-lg md:text-xl hover:underline">
             About
           </NavLink>
           
           <NavLink
             to="/project"
-            className=" px-3 text-lg md:text-xl md:hover:underline">
+            className=" px-3 text-lg md:text-xl hover:underline">
             Project
           </NavLink>
           <a

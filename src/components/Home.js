@@ -42,7 +42,7 @@ function Home() {
   if (!author) return <div>Loading...</div>;
 
   return (
-    <main className="lg:w-11/12 max-w-screen-lg m-auto min-h-screen p-4 my-7">
+    <main className="lg:w-11/12 max-w-screen-lg m-auto p-8 my-7">
       <section className="md:flex mt-10">
         <div className="flex justify-center">
           <img src={image} alt="profile" className="w-48 rounded-full my-5 md:m-0" />
