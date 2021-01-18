@@ -44,8 +44,8 @@ function Home() {
   return (
     <main className="md:w-11/12 max-w-screen-lg m-auto p-6 my-7">
       <section className="md:flex">
-        <div className="rounded-full flex justify-center">
-          <img src={image} alt="profile" className="overflow-hidden w-48 rounded-full my-5 md:m-0" />
+        <div className="flex justify-center">
+          <img src={image} alt="profile" className="w-48 rounded-full my-5 md:m-0" />
         </div>
 
         <div className="md:flex md:flex-col justify-center">

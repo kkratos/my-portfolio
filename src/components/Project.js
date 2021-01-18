@@ -38,16 +38,16 @@ export default function Project() {
         <h1 className="flex text-4xl font-bold justify-center p-10">
           Projects
         </h1>
-        <div className="grid md:grid-cols-2">
+        <div className="grid grid-col-1 md:mx-auto w-3/5">
           {projectData &&
             projectData.map((project, index) => (
               <div className="grid grid-flow-row md:px-4 lg:px-6 py-5" key={index}>
-                <div className="flex flex-col bg-white shadow-xl rounded-xl">
+                <div className="flex flex-col bg-white hover:shadow-xl rounded-xl">
                   <div className="overflow-hidden">
                     <img src={urlFor(project.pimage).url()} alt={project.title}/>
                   </div>
                   <div className="px-2 py-4">
-                    <h1 className="font-bold text-lg">{project.title}</h1>
+                    <h1 className="font-bold text-lg"><span className="bg-red-100">{project.title}</span></h1>
                     <p className="py-4">
                       {project.description}
                     </p>
