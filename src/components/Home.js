@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import image from "../assets/nyc.jpeg";
-import Post from "./Post";
+// import Post from "./Post";
 
 
 //About setion
@@ -43,8 +43,8 @@ function Home() {
 
   return (
     <main className="lg:w-11/12 max-w-screen-lg m-auto p-8 my-7">
-      <section className="md:flex mt-10">
-        <div className="rounded full flex justify-center">
+      <section className="md:flex">
+        <div className="rounded-full flex justify-center">
           <img src={image} alt="profile" className="object-contain w-48 rounded-full my-5 md:m-0" />
         </div>
 
@@ -52,18 +52,20 @@ function Home() {
           <div className="md:mx-7">
             <h1 className="text-xl md:text-2xl text-blue-700 text-center md:text-left">Hello, I'm Kamal</h1>
             <h3 className="text-md md:text-2xl text-gray-500 text-center md:text-left">Mechanical Engineer / Self-taught Developer.</h3>
-            <p className=" m-0 text-md md:text-2xl text-gray-500 text-center md:text-left">who is willing to learn and create outstanding applications!</p>
+            <p className="m-0 text-md md:text-2xl text-gray-500 text-center md:text-left">who is willing to learn and create outstanding applications!</p>
           </div>
         </div>
       </section>
 
+      {/**
       <section className="hidden flex flex-col mt-10">
         <h3 className="text-center md:text-left text-xl md:text-3xl font-bold my-5">Articles</h3>
         <Post />
       </section>
+      */}
 
       <section className="container mx-auto relative">
-        <section className="rounded-xl lg:flex lg:py-20 my-10">
+        <section className="rounded-xl lg:flex mt-10 lg:py-16">
           {/* <div className="flex justify-center"> */}
           {/* <img
             src={urlFor(author.authorImage).url()}
@@ -98,7 +100,7 @@ function Home() {
             <h3 className="text-xl md:text-3xl font-bold">Tech Stack</h3>
             <p className="m-0 text-md md:text-xl">My constantly evolving skills - these are the technology I'm capable to use.</p>
           </div>
-          <div className="flex flex-wrap gap-5 md:gap-5 mt-8">
+          <div className="flex flex-wrap gap-3 sm:gap-3 lg:gap-3 mt-8">
             <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaHtml5 size={70} />
               <h4>HTML5</h4>
@@ -141,9 +143,9 @@ function Home() {
         <section className="my-20 md:my-20">
           <h3 className="text-xl md:text-3xl font-bold">These are the things I'm currently doing.</h3>
           <div className="my-5 md:grid md:grid-cols-2 md:gap-y-1 md:gap-x-4 md:my-3">
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="p-4">Building an e-commerce full-stack project</p></div>
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="p-4">Learning Node.js</p></div>
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="p-4">Improving my UI/UX design Skills</p></div>
+            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Building an e-commerce full-stack project</p></div>
+            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Learning Node.js</p></div>
+            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Improving my UI/UX design Skills</p></div>
           </div>
         </section>
       </section>
