@@ -141,9 +141,9 @@ function Home() {
         <section className="my-20 md:my-20">
           <h3 className="text-xl md:text-3xl font-bold">These are the things I'm currently doing.</h3>
           <div className="my-5 md:grid md:grid-cols-2 md:gap-y-1 md:gap-x-4 md:my-3">
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-lg rounded-2xl shadow-lg"><p className="p-4">Building an e-commerce full-stack project</p></div>
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-lg rounded-2xl shadow-lg"><p className="p-4">Learning Node.js</p></div>
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-lg rounded-2xl shadow-lg"><p className="p-4">Improving my UI/UX design Skills</p></div>
+            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="p-4">Building an e-commerce full-stack project</p></div>
+            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="p-4">Learning Node.js</p></div>
+            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="p-4">Improving my UI/UX design Skills</p></div>
           </div>
         </section>
       </section>
