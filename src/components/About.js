@@ -41,10 +41,10 @@ export default function About() {
       <div className="my-5">
         <h3 className="text-3xl">Experience</h3>
       </div>
-      
-      <div className="my-5">
+
+      <div className="my-5 border-b-2 border-gray-200">
         <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
-          <h4 className="text-gray-500">Self-taught Developer</h4>
+          <h4 className="text-gray-500"><span className="bg-purple-100">Self-taught Developer</span></h4>
           <h4 className="flex md:justify-end">India</h4>
         </div>
         <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
@@ -60,9 +60,9 @@ export default function About() {
 
       </div>
 
-      <div className="my-5">
+      <div className="my-5 border-b-2 border-gray-200">
         <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
-          <h4 className="text-gray-500">Instahub - Automation Simplified</h4>
+          <h4 className="text-gray-500"><span className="bg-purple-100">Instahub - Automation Simplified</span></h4>
           <h4 className="flex md:justify-end">Philadelphia, PA</h4>
         </div>
         <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
@@ -86,9 +86,9 @@ export default function About() {
 
       </div>
 
-      <div className="my-5">
+      <div className="my-5 border-b-2 border-gray-200">
         <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
-          <h4 className="md:text-xl text-gray-500">NYU Composite Material and Mechanics Laboratory</h4>
+          <h4 className="md:text-xl text-gray-500"><span className="bg-purple-100">NYU Composite Material and Mechanics Laboratory</span></h4>
           <h4 className="flex md:justify-end">New York, NY</h4>
         </div>
         <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
@@ -105,9 +105,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="my-5">
+      <div className="my-5 border-b-2 border-gray-200">
         <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
-          <h4 className="text-gray-500">NYU Vertically Integrated Project - Soft Robotics</h4>
+          <h4 className="text-gray-500"><span className="bg-purple-100">NYU Vertically Integrated Project - Soft Robotics</span></h4>
           <h4 className="flex md:justify-end">New York, NY</h4>
         </div>
         <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
@@ -124,9 +124,9 @@ export default function About() {
           </ul>
         </div>
       </div>
-      <div className="my-5">
+      <div className="my-5 border-b-2 border-gray-200">
         <div className="text-md md:text-xl flex flex-col md:grid md:grid-cols-2">
-          <h4 className="text-gray-500">NYU Autonomous vehicle - Mechanical Team</h4>
+          <h4 className="text-gray-500"><span className="bg-purple-100">NYU Autonomous vehicle - Mechanical Team</span></h4>
           <h4 className="flex md:justify-end">New York, NY</h4>
         </div>
         <div className="text-md md:text-xl flex flex-col my-3 md:m-0 md:grid md:grid-cols-2">
@@ -145,6 +145,11 @@ export default function About() {
           </ul>
         </div>
       </div>
+
+
+      {
+        //! removed from this page and moved to home page. 
+      }
 
       <div className="hidden container mx-auto relative">
         <section className="rounded-xl lg:flex lg:py-20 my-10">
