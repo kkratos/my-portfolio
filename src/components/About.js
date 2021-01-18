@@ -36,7 +36,7 @@ export default function About() {
   if (!author) return <div>Loading...</div>;
 
   return (
-    <main className="lg:w-11/12 max-w-screen-lg m-auto p-8 my-7">
+    <main className="lg:w-11/12 max-w-screen-lg m-auto p-6 my-7">
 
       <div className="my-5">
         <h3 className="text-3xl">Experience</h3>

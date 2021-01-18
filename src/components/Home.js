@@ -42,10 +42,10 @@ function Home() {
   if (!author) return <div>Loading...</div>;
 
   return (
-    <main className="lg:w-11/12 max-w-screen-lg m-auto p-8 my-7">
+    <main className="md:w-11/12 max-w-screen-lg m-auto p-6 my-7">
       <section className="md:flex">
         <div className="rounded-full flex justify-center">
-          <img src={image} alt="profile" className="object-contain w-48 rounded-full my-5 md:m-0" />
+          <img src={image} alt="profile" className="w-48 rounded-full my-5 md:m-0" />
         </div>
 
         <div className="md:flex md:flex-col justify-center">
@@ -64,7 +64,7 @@ function Home() {
       </section>
       */}
 
-      <section className="container mx-auto relative">
+      <section className="container mx-auto">
         <section className="rounded-xl lg:flex mt-10 lg:py-16">
           {/* <div className="flex justify-center"> */}
           {/* <img

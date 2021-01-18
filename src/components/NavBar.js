@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="lg:w-11/12 max-w-screen-lg m-auto md:mt-10 mt-4 p-4 ">
+    <header className="lg:w-11/12 max-w-screen-lg m-auto md:mt-10 mt-4 p-6 ">
       <div className="flex justify-center md:justify-between">
         <nav className="flex md:py-3 md:my-6 items-center">
 
