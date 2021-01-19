@@ -43,9 +43,9 @@ function Home() {
 
   return (
     <main className="md:w-11/12 max-w-screen-lg m-auto p-6 my-7">
-      <section className="md:flex">
+      <section className="md:flex md:justify-between">
         <div className="flex justify-center">
-          <img src={image} alt="profile" className="w-48 h-48 max-w-full rounded-full my-5 md:m-0" />
+          <img src={image} alt="profile" className="w-48 max-w-full h-auto rounded-full my-5 md:m-0" />
         </div>
 
         <div className="md:flex md:flex-col justify-center">
@@ -64,7 +64,7 @@ function Home() {
       </section>
       */}
 
-      <section className="container mx-auto">
+      <section className="">
         <section className="rounded-xl lg:flex mt-10 lg:py-16">
           {/* <div className="flex justify-center"> */}
           {/* <img
