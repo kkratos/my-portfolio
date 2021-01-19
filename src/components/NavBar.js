@@ -21,7 +21,7 @@ export default function NavBar() {
             className=" px-3 text-lg md:text-xl hover:underline">
             About
           </NavLink>
-          
+
           <NavLink
             to="/project"
             className=" px-3 text-lg md:text-xl hover:underline">
