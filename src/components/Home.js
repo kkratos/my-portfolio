@@ -103,7 +103,7 @@ function Home() {
             <p className="m-0 text-md md:text-xl">My constantly evolving skills - these are the technology I'm capable to use.</p>
           </div>
           {/* <div className="flex flex-wrap gap-3 sm:gap-3 lg:gap-3 mt-8 "> */}
-          <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 lg:gap-6 mt-8">
+          <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 lg:gap-4 mt-8">
             <div className="flex flex-grow md:flex-grow-0 flex-col items-center w-20 h-20 p-2 md:p-8 md:w-32 md:h-32 bg-blue-300">
               <FaHtml5 size={70} />
               <h4>HTML5</h4>
