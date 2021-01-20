@@ -29,7 +29,7 @@ export default function NavBar() {
           </NavLink>
           <a
             rel="noreferrer"
-            href="https://hashnode.com/@KamalPatel"
+            href="https://kamalpatel.hashnode.dev/"
             className=" px-3 text-lg md:text-xl hover:underline"
             target="_blank">
             Blog
