@@ -17,7 +17,7 @@ export default function Project() {
     sanityClient
       .fetch(
         `*[_type == "project"]{
-        pimage,
+        poster,
         title,
         date,
         place,
@@ -44,7 +44,7 @@ export default function Project() {
               <div className="grid grid-flow-row md:px-4 lg:px-6 py-5" key={index}>
                 <div className="flex flex-col bg-white hover:shadow-xl rounded-xl">
                   <div className="overflow-hidden">
-                    <img src={urlFor(project.pimage).url()} alt={project.title}/>
+                    <img src={urlFor(project.poster).url()} alt={project.title}/>
                   </div>
                   <div className="px-2 py-4">
                     <h1 className="font-bold text-lg"><span className="bg-red-100">{project.title}</span></h1>

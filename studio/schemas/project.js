@@ -5,12 +5,22 @@ export default {
 
   fields: [
     {
-      name: "pimage",
-      title: "Image",
-      type: "image",
+      title: 'Poster',
+      name: 'poster',
+      type: 'image',
       options: {
-        hotspot: true,
+        hotspot: true // <-- Defaults to false
       },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Caption',
+          options: {
+            isHighlighted: true // <-- make this field easily accessible
+          }
+        },
+      ]
     },
 
     {
@@ -58,5 +68,6 @@ export default {
         layout: "tags",
       },
     },
+
   ],
 };

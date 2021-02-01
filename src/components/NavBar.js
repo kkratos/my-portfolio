@@ -15,12 +15,12 @@ export default function NavBar() {
             Home
           </NavLink>
 
-
+{/* 
           <NavLink
             to="/about"
             className=" px-3 text-lg md:text-xl hover:underline">
             About
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             to="/project"
