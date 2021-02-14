@@ -38,13 +38,13 @@ export default function Project() {
         <h1 className="flex text-4xl font-bold justify-center p-10">
           Projects
         </h1>
-        <div className="grid grid-col-1 md:mx-auto w-3/5">
+        <div className="grid grid-col-1 md:mx-auto w-4/5 2 p-4">
           {projectData &&
             projectData.map((project, index) => (
               <div className="grid grid-flow-row md:px-4 lg:px-6 py-5" key={index}>
-                <div className="flex flex-col bg-white hover:shadow-xl rounded-xl">
+                <div className="flex flex-col bg-white hover:shadow-xl rounded-xl p-3 shadow-lg">
                   <div className="overflow-hidden">
-                    <img src={urlFor(project.poster).url()} alt={project.title}/>
+                    <img src={urlFor(project.poster).url()} alt={project.title} />
                   </div>
                   <div className="px-2 py-4">
                     <h1 className="font-bold text-lg"><span className="bg-red-100">{project.title}</span></h1>
@@ -61,7 +61,7 @@ export default function Project() {
                     </div>
                     <div className="flex mt-auto py-2 px-2">
                       <a href="https://www.github.com/kkratos" alt={project.title} target="_blank" rel="noreferrer">
-                        <FaGithub className="mr-3" style={{ height: 25, width: 25}} />
+                        <FaGithub className="mr-3" style={{ height: 25, width: 25 }} />
                       </a>
                       <a href={project.link} alt={project.title} target="_blank" rel="noreferrer">
                         <FaExternalLinkAlt className="mr-3" style={{ height: 25, width: 25 }} />
