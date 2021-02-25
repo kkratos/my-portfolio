@@ -38,7 +38,7 @@ export default function Project() {
         <h1 className="flex text-4xl font-bold justify-center p-10">
           Projects
         </h1>
-        <div className="grid grid-cols-2 md:mx-auto p-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:mx-auto md:p-4 ">
           {projectData &&
             projectData.map((project, index) => (
               <div className="grid grid-flow-row md:px-4 lg:px-6 py-5" key={index}>
@@ -54,9 +54,9 @@ export default function Project() {
 
                   </div>
                   <div className="mt-auto">
-                    <div className="flex m-2">
+                    <div className="flex flex-wrap mx-2 mg:my-2">
                       {project.tags.map((tag, index) => (
-                        <li className="list-none text-center text-sm mr-2 p-1 bg-white rounded-md" key={index}>{tag}</li>
+                        <li className="list-none text-center text-sm mr-2 p-1 bg-white rounded-md mb-2" key={index}>{tag}</li>
                       ))}
                     </div>
                     <div className="text-purple-700 flex mt-auto py-2 px-2">
@@ -73,6 +73,6 @@ export default function Project() {
             ))}
         </div>
       </section>
-    </main >
+    </main>
   );
 }
