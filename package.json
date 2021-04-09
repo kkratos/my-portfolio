@@ -25,7 +25,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "svgr": "svgr -d src/Icons/ assets/"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/cli": "^5.5.0",
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
