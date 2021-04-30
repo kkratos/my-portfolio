@@ -46,7 +46,7 @@ function Home() {
       .catch(console.error);
   }, []);
 
-  if (!author) return <div>Loading...</div>;
+  if (!author) return <div className="md:w-11/12 max-w-screen-lg m-auto">Loading...</div>;
 
   return (
     <main className="md:w-11/12 max-w-screen-lg m-auto p-6 my-7">
@@ -59,39 +59,24 @@ function Home() {
 
         <div className="md:flex md:flex-col justify-center">
           <div className="md:mx-7">
-            <h1 className="text-xl md:text-2xl text-blue-700 text-center md:text-left">Hello, I'm Kamal</h1>
-            <h3 className="text-md md:text-2xl text-gray-500 text-center md:text-left">Mechanical Engineer / Self-taught Developer.</h3>
-            <p className="m-0 text-md md:text-2xl text-gray-500 text-center md:text-left">who is willing to learn and create outstanding applications!</p>
+            <h1 className="text-xl md:text-2xl text-center md:text-left">Hello, I'm Kamal</h1>
+            <h3 className="text-md md:text-2xl text-gray-500 text-center md:text-left"><span className="text-red-400">Mechanical Engineer</span> / Self-taught Developer.</h3>
+            <p className="m-0 text-md md:text-2xl text-gray-500 text-center md:text-left">Aspiring <span className="text-blue-600">Full-Stack Developer.</span></p>
           </div>
         </div>
       </section>
 
-      {/**
-      <section className="hidden flex flex-col mt-10">
-        <h3 className="text-center md:text-left text-xl md:text-3xl font-bold my-5">Articles</h3>
-        <Post />
-      </section>
-      */}
 
       <section className="">
         <section className="rounded-xl lg:flex mt-10 lg:py-16">
-          {/* <div className="flex justify-center"> */}
-          {/* <img
-            src={urlFor(author.authorImage).url()}
-            className="rounded-3xl mb-4 w-32 h-32 lg:w-64 lg:h-64 lg:mr-8"
-            alt="kamal"
-          /> */}
-          {/* </div> */}
+          
           <div className="flex flex-col justify-center">
-            {/* <h1 className="cursive md:text-3xl text-black-300 mb-2 ">
-              Hey there. I'm{" "}
-              <span className="text-black-100">{author.name}. 👋</span>
-            </h1> */}
+           
             <p className="m-0 text-black-200 text-md md:text-xl text-justify">{author.bio}</p>
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className="my-20 md:my-20">
             <h3 className="text-xl md:text-3xl font-bold">Education</h3>
             <div className="mt-2">
@@ -102,7 +87,7 @@ function Home() {
               <h4 className="italic">Major - Control and Dynamics for Robotics Systems</h4>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="my-20 md:my-20">
           <div className="space-y-2">
@@ -180,14 +165,14 @@ function Home() {
           </div>
         </section>
 
-        <section className="my-20 md:my-20">
+        {/* <section className="my-20 md:my-20">
           <h3 className="text-xl md:text-3xl font-bold">These are the things I'm currently doing.</h3>
           <div className="my-5 md:grid md:grid-cols-2 md:gap-y-1 md:gap-x-4 md:my-3">
             <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Building an e-commerce full-stack project</p></div>
             <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Learning Node.js</p></div>
             <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Improving my UI/UX design Skills</p></div>
           </div>
-        </section>
+        </section> */}
       </section>
     </main>
   );

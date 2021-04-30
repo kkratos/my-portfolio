@@ -27,13 +27,14 @@ export default function NavBar() {
             className=" px-3 text-lg md:text-xl hover:underline">
             Project
           </NavLink>
-          <a
+
+          {/* <a
             rel="noreferrer"
             href="https://kamalpatel.hashnode.dev/"
             className=" px-3 text-lg md:text-xl hover:underline"
             target="_blank">
             Blog
-          </a>
+          </a> */}
 
         </nav>
         <div className="inline-flex py-3 my-6 hidden md:inline-flex">
