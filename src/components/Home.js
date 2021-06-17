@@ -7,8 +7,6 @@ import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 // import imageUrlBuilder from "@sanity/image-url";
 
-
-
 import SvgCss from '../Icons/Css'
 import SvgFirebase from '../Icons/Firebase'
 import SvgGit from '../Icons/Git'
@@ -22,7 +20,8 @@ import SvgGithub from '../Icons/Github'
 import SvgExpress from '../Icons/Expressjs'
 import SvgTailwindcss from '../Icons/Tailwindcss'
 import SvgPython from '../Icons/Python'
-
+import SvgTypescript from '../Icons/Typescript'
+import SvgNestjs from '../Icons/Nestjs'
 
 // const builder = imageUrlBuilder(sanityClient);
 
@@ -69,14 +68,14 @@ function Home() {
 
       <section className="">
         <section className="rounded-xl lg:flex mt-10 lg:py-16">
-          
+
           <div className="flex flex-col justify-center">
-           
+
             <p className="m-0 text-black-200 text-md md:text-xl text-justify">{author.bio}</p>
           </div>
         </section>
 
-        {/* <section>
+        <section>
           <div className="my-20 md:my-20">
             <h3 className="text-xl md:text-3xl font-bold">Education</h3>
             <div className="mt-2">
@@ -84,10 +83,9 @@ function Home() {
             </div>
             <div className="mt-1">
               <p className='m-0 bg-purple-300 inline-block w-44 italic'>New York University '19</p>
-              <h4 className="italic">Major - Control and Dynamics for Robotics Systems</h4>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section className="my-20 md:my-20">
           <div className="space-y-2">
@@ -129,6 +127,9 @@ function Home() {
                 <div className="flex flex-col justify-center">
                   <SvgFirebase />
                 </div>
+                <div className="flex flex-col justify-center">
+                  <SvgNestjs />
+                </div>
 
               </div>
             </div>
@@ -142,7 +143,9 @@ function Home() {
                 <div className="flex flex-col justify-center">
                   <SvgPython />
                 </div>
-
+                <div className="flex flex-col justify-center">
+                  <SvgTypescript />
+                </div>
               </div>
             </div>
 
@@ -165,14 +168,6 @@ function Home() {
           </div>
         </section>
 
-        {/* <section className="my-20 md:my-20">
-          <h3 className="text-xl md:text-3xl font-bold">These are the things I'm currently doing.</h3>
-          <div className="my-5 md:grid md:grid-cols-2 md:gap-y-1 md:gap-x-4 md:my-3">
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Building an e-commerce full-stack project</p></div>
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Learning Node.js</p></div>
-            <div className="flex justify-center items-center text-center bg-blue-300 text-black my-2 md:text-md rounded-2xl shadow-lg"><p className="py-3">Improving my UI/UX design Skills</p></div>
-          </div>
-        </section> */}
       </section>
     </main>
   );

@@ -138,14 +138,12 @@ export default function About() {
           <ul className="py-4 list-disc text-justify">
             <li>Collaboratively designed an autonomous vehicle for annual Intelligent Ground Vehicle Competition (IGVC'18). Placed <strong>3rd out of 10 teams</strong> for a self-drive challenge.</li>
             <li>Worked closely with purchasing team to procure hardware and tools required and assisted in securing sponsorship.</li>
-            <li>Assisted the <strong>team of 10 engineers</strong> in converting a golf cart into an self-driving vehicle under <strong>$6000</strong> using inexpensive
-            micro-controllers and 3D printing.</li>
-            <li>Responsible for assembling and disassembling of vehicle, electrical wiring routing and installation of hardware.</li>
+            <li>Assisted the <strong>team of 10 engineers</strong> in building a self-driving vehicle under <strong>$6000</strong></li>
+            <li>Responsible for assembling of vehicle, electrical wiring routing and installation of hardware.</li>
             <li>3D printed prototypes for sensor mounts and conducted fit and functionality test on the vehicle.</li>
           </ul>
         </div>
       </div>
-
 
       {
         //! removed from this page and moved to home page. 

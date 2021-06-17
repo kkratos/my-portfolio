@@ -4,6 +4,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
+
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
@@ -11,6 +12,8 @@ function urlFor(source) {
 }
 
 export default function Project() {
+
+
   const [projectData, setProjectData] = useState(null);
 
   useEffect(() => {
@@ -51,7 +54,6 @@ export default function Project() {
                     <p className="text-black py-4">
                       {project.description}
                     </p>
-
                   </div>
                   <div className="mt-auto">
                     <div className="flex flex-wrap mg:my-2">
@@ -66,6 +68,7 @@ export default function Project() {
                       <a href={project.link} alt={project.title} target="_blank" rel="noreferrer">
                         <FaExternalLinkAlt className="mr-3" style={{ height: 25, width: 25 }} />
                       </a>
+
                     </div>
                   </div>
                 </div>
