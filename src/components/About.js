@@ -54,7 +54,7 @@ export default function About() {
 
         <div>
           <ul className="py-4 list-disc text-justify">
-            <li>Building fullstack application with Reactjs.</li>
+            <li>Built fullstack web applications with Reactjs ecosystem. Checkout my projects page.</li>
           </ul>
         </div>
 
@@ -73,11 +73,11 @@ export default function About() {
         <div>
           <ul className="py-4 list-disc text-justify">
             <li>Worked with engineers in design, assembly, test and modification of electro-mechanical product Snap-on Lightning
-                Automation Retrofit Device.</li>
+              Automation Retrofit Device.</li>
             <li>Assisted the supervisor with part design/calculation and drafted detailed 2D manufacturing drawings using Solidworks
-                and AutoCAD.</li>
+              and AutoCAD.</li>
             <li>Iterated the part design and prototyping of the device using the Prusa3D printers and conducted the repair and
-                installation of new printers.</li>
+              installation of new printers.</li>
             <li>
               <strong>Updated 20 CAD files</strong> and created accessible drawings of the existing products for reference for other engineers.
             </li>
@@ -120,7 +120,7 @@ export default function About() {
             <li>Conducted brainstorming and problem solving sessions for undergraduate students in soft robotics course.</li>
             <li>Tutored students in Solidworks and 3D printing/Cura software with hands-on exercise and  training on Ultimaker 3D Printers.</li>
             <li><strong>Assisted 18-20 students</strong> with material selection, design, construction and testing of soft robotics structures for a credit
-            course.</li>
+              course.</li>
           </ul>
         </div>
       </div>
@@ -144,10 +144,6 @@ export default function About() {
           </ul>
         </div>
       </div>
-
-      {
-        //! removed from this page and moved to home page. 
-      }
 
       <div className="hidden container mx-auto relative">
         <section className="rounded-xl lg:flex lg:py-20 my-10">

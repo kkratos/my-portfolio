@@ -23,10 +23,8 @@ export default function Project() {
         poster,
         title,
         date,
-        place,
         language,
         description,
-        projectType,
         link,
         tags
       }`

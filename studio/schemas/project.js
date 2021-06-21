@@ -32,26 +32,26 @@ const schema = {
       name: "date",
       type: "datetime",
     },
-    {
-      name: "place",
-      type: "string",
-    },
+    // {
+    //   name: "place",
+    //   type: "string",
+    // },
     {
       name: "description",
       type: "text",
     },
-    {
-      name: "projectType",
-      title: "Project Type",
-      type: "string",
-      options: {
-        list: [
-          { value: "personal", title: "Personal" },
-          { value: "client", title: "Client" },
-          { value: "school", title: "School" },
-        ],
-      },
-    },
+    // {
+    //   name: "projectType",
+    //   title: "Project Type",
+    //   type: "string",
+    //   options: {
+    //     list: [
+    //       { value: "personal", title: "Personal" },
+    //       { value: "client", title: "Client" },
+    //       { value: "school", title: "School" },
+    //     ],
+    //   },
+    // },
     {
       name: "link",
       type: "url",
@@ -68,7 +68,22 @@ const schema = {
         layout: "tags",
       },
     },
-
+  ],
+  orderings: [
+    {
+      title: 'Release Date',
+      name: 'releaseDate',
+      by: [
+        { field: 'releaseDate', direction: 'asc' }
+      ]
+    },
+    {
+      title: 'Rating',
+      name: 'rating',
+      by: [
+        { field: 'rating', direction: 'desc' }
+      ]
+    }
   ],
 };
 
