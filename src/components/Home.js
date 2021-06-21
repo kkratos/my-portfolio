@@ -96,7 +96,7 @@ function Home() {
           <div className=" flex-wrap gap-2 sm:gap-3 md:gap-4 lg:gap-4 mt-8">
 
             <div className="border-2  my-4 p-3">
-              <h1 className="text-2xl text-center md:text-left mb-2 font-medium text-blue-500">Frontend</h1>
+              <h1 className="text-2xl mb-2 font-medium text-blue-500">Frontend</h1>
               <div className="flex flex-wrap gap-6  md:gap-4 ">
                 <div className="flex flex-col justify-center">
                   <SvgHtml />
@@ -116,7 +116,7 @@ function Home() {
               </div>
             </div>
             <div className="border-2 my-4 p-3">
-              <h1 className="text-2xl text-center md:text-left mb-2 font-medium text-blue-500">Backend</h1>
+              <h1 className="text-2xl mb-2 font-medium text-blue-500">Backend</h1>
               <div className="flex flex-wrap gap-3  md:gap-4">
                 <div className="flex flex-col justify-center">
                   <SvgNodeJS />
@@ -135,7 +135,7 @@ function Home() {
             </div>
 
             <div className="border-2 my-4 p-3">
-              <h1 className="text-2xl text-center md:text-left mb-2 font-medium text-blue-500">Programming</h1>
+              <h1 className="text-2xl mb-2 font-medium text-blue-500">Programming</h1>
               <div className="flex flex-wrap gap-4 md:grap-4">
                 <div className="flex flex-col justify-center">
                   <SvgJs />
@@ -150,7 +150,7 @@ function Home() {
             </div>
 
             <div className="border-2 my-4 p-3">
-              <h1 className="text-2xl text-center md:text-left font-medium text-blue-500">Tools</h1>
+              <h1 className="text-2xl font-medium text-blue-500">Tools</h1>
               <div className="flex flex-wrap gap-4 md:gap-4">
                 <div className="flex flex-col justify-center">
                   <SvgGit />
@@ -163,11 +163,8 @@ function Home() {
                 </div>
               </div>
             </div>
-
-
           </div>
         </section>
-
       </section>
     </main>
   );
